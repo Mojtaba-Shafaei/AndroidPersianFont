@@ -1,0 +1,83 @@
+package com.mojtaba_shafaei.android;
+
+import android.content.Context;
+import android.graphics.Typeface;
+import android.support.v4.util.ArrayMap;
+
+/**
+ * Created by mojtaba on 8/22/17.
+ */
+
+public class PersianFont {
+    private final static ArrayMap<Integer, Typeface> cache = new ArrayMap<>();
+
+    private static final int IRANSANS_ULTRA_LIGHT = 1;
+    private static final int IRANSANS_LIGHT = 2;
+    private static final int IRANSANS_NORMAL = 3;
+    private static final int IRANSANS_MEDIUM = 4;
+    private static final int IRANSANS_BOLD = 5;
+
+    private static final int YEKAN_REGULAR = 10;
+    private static final int YEKAN_LIGHT = 11;
+    private static final int YEKAN_BOLD = 12;
+
+
+    ////////////////////////////////////
+    ////////////////////////////////////
+
+    public static Typeface IRAN_SANS_ULTRA_LIGHT(Context context) {
+        if (cache.containsKey(IRANSANS_ULTRA_LIGHT)) {
+            cache.put(IRANSANS_ULTRA_LIGHT, Typeface.createFromAsset(context.getAssets(), "fonts/" + "IRANSansMobile_UltraLight.ttf"));
+        }
+        return cache.get(IRANSANS_ULTRA_LIGHT);
+    }
+
+    public static Typeface IRANSANS_LIGHT(Context context) {
+        if (!cache.containsKey(IRANSANS_LIGHT)) {
+            cache.put(IRANSANS_LIGHT, Typeface.createFromAsset(context.getAssets(), "fonts/" + "IRANSansMobile_Light.ttf"));
+        }
+        return cache.get(IRANSANS_LIGHT);
+    }
+
+    public static Typeface IRANSANS_NORMAL(Context context) {
+        if (!cache.containsKey(IRANSANS_NORMAL)) {
+            cache.put(IRANSANS_NORMAL, Typeface.createFromAsset(context.getAssets(), "fonts/" + "IRANSansMobile.ttf"));
+        }
+        return cache.get(IRANSANS_NORMAL);
+    }
+
+    public static Typeface IRANSANS_MEDIUM(Context context) {
+        if (!cache.containsKey(IRANSANS_MEDIUM)) {
+            cache.put(IRANSANS_MEDIUM, Typeface.createFromAsset(context.getAssets(), "fonts/" + "IRANSansMobile_Medium.ttf"));
+        }
+        return cache.get(IRANSANS_MEDIUM);
+    }
+
+    public static Typeface IRANSANS_BOLD(Context context) {
+        if (!cache.containsKey(IRANSANS_BOLD)) {
+            cache.put(IRANSANS_BOLD, Typeface.createFromAsset(context.getAssets(), "fonts/" + "IRANSansMobile_Bold.ttf"));
+        }
+        return cache.get(IRANSANS_BOLD);
+    }
+
+    public static Typeface YEKAN_REGULAR(Context context) {
+        if (!cache.containsKey(YEKAN_REGULAR)) {
+            cache.put(YEKAN_REGULAR, Typeface.createFromAsset(context.getAssets(), "fonts/" + "IRANYekanMobileRegular.ttf"));
+        }
+        return cache.get(YEKAN_REGULAR);
+    }
+
+    public static Typeface YEKAN_LIGHT(Context context) {
+        if (!cache.containsKey(YEKAN_LIGHT)) {
+            cache.put(YEKAN_LIGHT, Typeface.createFromAsset(context.getAssets(), "fonts/" + "IRANYekanMobileLight.ttf"));
+        }
+        return cache.get(YEKAN_LIGHT);
+    }
+
+    public static Typeface YEKAN_BOLD(Context context) {
+        if (!cache.containsKey(YEKAN_BOLD)) {
+            cache.put(YEKAN_BOLD, Typeface.createFromAsset(context.getAssets(), "fonts/" + "IRANYekanMobileBold.ttf"));
+        }
+        return cache.get(YEKAN_BOLD);
+    }
+}
