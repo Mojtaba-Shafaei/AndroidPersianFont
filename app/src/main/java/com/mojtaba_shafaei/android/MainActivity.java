@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
         TextView t1 = findViewById(R.id.t1);
         TextView t2 = findViewById(R.id.t2);
 
-        t1.setTypeface(PersianFont.IRANSANS_LIGHT());
-        t2.setTypeface(PersianFont.YEKAN_BOLD(this));
+        t1.setTypeface(PersianFont.IRANSANS_LIGHT(this));
+        t2.setTypeface(PersianFont.YEKAN_REGULAR(this));
 
     }
 }
