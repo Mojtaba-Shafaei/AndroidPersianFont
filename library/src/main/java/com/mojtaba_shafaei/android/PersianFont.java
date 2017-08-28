@@ -11,15 +11,15 @@ import android.support.v4.util.ArrayMap;
 public class PersianFont {
     private final static ArrayMap<Integer, Typeface> cache = new ArrayMap<>();
 
-    private static final int IRANSANS_ULTRA_LIGHT = 1;
-    private static final int IRANSANS_LIGHT = 2;
-    private static final int IRANSANS_NORMAL = 3;
-    private static final int IRANSANS_MEDIUM = 4;
-    private static final int IRANSANS_BOLD = 5;
+    public static final int IRANSANS_ULTRA_LIGHT = 1;
+    public static final int IRANSANS_LIGHT = 2;
+    public static final int IRANSANS_NORMAL = 3;
+    public static final int IRANSANS_MEDIUM = 4;
+    public static final int IRANSANS_BOLD = 5;
 
-    private static final int YEKAN_REGULAR = 10;
-    private static final int YEKAN_LIGHT = 11;
-    private static final int YEKAN_BOLD = 12;
+    public static final int YEKAN_REGULAR = 10;
+    public static final int YEKAN_LIGHT = 11;
+    public static final int YEKAN_BOLD = 12;
 
 
     ////////////////////////////////////
