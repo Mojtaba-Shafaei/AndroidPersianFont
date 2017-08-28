@@ -1,4 +1,4 @@
-package com.mojtaba_shafaei.android;
+package com.mojtaba_shafaei.persianFont;
 
 import android.content.Context;
 import android.graphics.Typeface;
