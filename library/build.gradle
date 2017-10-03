@@ -20,11 +20,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    publishNonDefault true
+    resourcePrefix 'persianFont_'
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation "com.android.support:appcompat-v7:$rootProject.ext.buildToolsVersion"
+    implementation "com.android.support:appcompat-v7:$rootProject.ext.supportVersion"
 
 }
