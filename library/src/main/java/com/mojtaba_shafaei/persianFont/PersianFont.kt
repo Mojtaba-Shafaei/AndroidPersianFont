@@ -35,7 +35,8 @@ object PersianFont {
     private val cache = HashMap<FontEnum, Typeface>()
 
     //<editor-fold desc="iran sans">
-    fun IRAN_SANS_ULTRA_LIGHT(context: Context): Typeface {
+    @JvmStatic
+    fun iranSansUltraLight(context: Context): Typeface {
         var lvTypeface = cache[IRAN_SANS_ULTRA_LIGHT]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANSansMobile_UltraLight.ttf")
@@ -45,7 +46,8 @@ object PersianFont {
         return lvTypeface
     }
 
-    fun IRANSANS_LIGHT(context: Context): Typeface {
+    @JvmStatic
+    fun iransansLight(context: Context): Typeface {
         var lvTypeface = cache[IRANSANS_LIGHT]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANSansMobile_Light.ttf")
@@ -55,7 +57,8 @@ object PersianFont {
         return lvTypeface
     }
 
-    fun IRANSANS_NORMAL(context: Context): Typeface {
+    @JvmStatic
+    fun iransansNormal(context: Context): Typeface {
         var lvTypeface = cache[IRANSANS_NORMAL]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANSansMobile.ttf")
@@ -65,7 +68,8 @@ object PersianFont {
         return lvTypeface
     }
 
-    fun IRANSANS_MEDIUM(context: Context): Typeface {
+    @JvmStatic
+    fun iransansMedium(context: Context): Typeface {
         var lvTypeface = cache[IRANSANS_MEDIUM]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANSansMobile_Medium.ttf")
@@ -75,7 +79,8 @@ object PersianFont {
         return lvTypeface
     }
 
-    fun IRANSANS_BOLD(context: Context): Typeface {
+    @JvmStatic
+    fun iransansBold(context: Context): Typeface {
         var lvTypeface = cache[IRANSANS_BOLD]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANSansMobile_Bold.ttf")
@@ -85,7 +90,8 @@ object PersianFont {
         return lvTypeface
     }
 
-    fun IRANSANS_BLACK(context: Context): Typeface {
+    @JvmStatic
+    fun iransansBlack(context: Context): Typeface {
         var lvTypeface = cache[IRANSANS_BLACK]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANSansMobile_Black.ttf")
@@ -97,7 +103,8 @@ object PersianFont {
     //</editor-fold>
 
     //<editor-fold desc="Fa num">
-    fun IRAN_SANS_FA_NUM(context: Context): Typeface {
+    @JvmStatic
+    fun iranSansFaNum(context: Context): Typeface {
         var lvTypeface = cache[IRAN_SANS_FA_NUM]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANSansMobile(FaNum).ttf")
@@ -107,7 +114,8 @@ object PersianFont {
         return lvTypeface
     }
 
-    fun IRAN_SANS_FA_NUM_BLACK(context: Context): Typeface {
+    @JvmStatic
+    fun iranSansFaNumBlack(context: Context): Typeface {
         var lvTypeface = cache[IRAN_SANS_FA_NUM_BLACK]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANSansMobile(FaNum)_Black.ttf")
@@ -117,7 +125,8 @@ object PersianFont {
         return lvTypeface
     }
 
-    fun IRAN_SANS_FA_NUM_BOLD(context: Context): Typeface {
+    @JvmStatic
+    fun iranSansFaNumBold(context: Context): Typeface {
         var lvTypeface = cache[IRAN_SANS_FA_NUM_BOLD]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANSansMobile(FaNum)_Bold.ttf")
@@ -127,7 +136,8 @@ object PersianFont {
         return lvTypeface
     }
 
-    fun IRAN_SANS_FA_NUM_LIGHT(context: Context): Typeface {
+    @JvmStatic
+    fun iranSansFaNumLight(context: Context): Typeface {
         var lvTypeface = cache[IRAN_SANS_FA_NUM_LIGHT]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANSansMobile(FaNum)_Light.ttf")
@@ -137,7 +147,8 @@ object PersianFont {
         return lvTypeface
     }
 
-    fun IRAN_SANS_FA_NUM_MEDIUM(context: Context): Typeface {
+    @JvmStatic
+    fun iranSansFaNumMedium(context: Context): Typeface {
         var lvTypeface = cache[IRAN_SANS_FA_NUM_MEDIUM]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANSansMobile(FaNum)_Medium.ttf")
@@ -147,7 +158,8 @@ object PersianFont {
         return lvTypeface
     }
 
-    fun IRAN_SANS_FA_NUM_ULTRA_LIGHT(context: Context): Typeface {
+    @JvmStatic
+    fun iranSansFaNumUltraLight(context: Context): Typeface {
         var lvTypeface = cache[IRAN_SANS_FA_NUM_ULTRA_LIGHT]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANSansMobile(FaNum)_UltraLight.ttf")
@@ -159,7 +171,8 @@ object PersianFont {
     //</editor-fold>
 
     //<editor-fold desc="Yekan">
-    fun YEKAN_REGULAR(context: Context): Typeface {
+    @JvmStatic
+    fun yekanRegular(context: Context): Typeface {
         var lvTypeface = cache[YEKAN_REGULAR]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANYekanMobileRegular.ttf")
@@ -169,7 +182,8 @@ object PersianFont {
         return lvTypeface
     }
 
-    fun YEKAN_LIGHT(context: Context): Typeface {
+    @JvmStatic
+    fun yekanLight(context: Context): Typeface {
         var lvTypeface = cache[YEKAN_LIGHT]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANYekanMobileLight.ttf")
@@ -179,7 +193,8 @@ object PersianFont {
         return lvTypeface
     }
 
-    fun YEKAN_BOLD(context: Context): Typeface {
+    @JvmStatic
+    fun yekanBold(context: Context): Typeface {
         var lvTypeface = cache[YEKAN_BOLD]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANYekanMobileBold.ttf")
@@ -189,7 +204,8 @@ object PersianFont {
         return lvTypeface
     }
 
-    fun YEKAN_BLACK(context: Context): Typeface {
+    @JvmStatic
+    fun yekanBlack(context: Context): Typeface {
         var lvTypeface = cache[YEKAN_BLACK]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANYekanMobileBlack.ttf")
@@ -199,7 +215,8 @@ object PersianFont {
         return lvTypeface
     }
 
-    fun YEKAN_EXTRA_BLACK(context: Context): Typeface {
+    @JvmStatic
+    fun yekanExtraBlack(context: Context): Typeface {
         var lvTypeface = cache[YEKAN_EXTRA_BLACK]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANYekanMobileExtraBlack.ttf")
@@ -209,7 +226,8 @@ object PersianFont {
         return lvTypeface
     }
 
-    fun YEKAN_EXTRA_BOLD(context: Context): Typeface {
+    @JvmStatic
+    fun yekanExtraBold(context: Context): Typeface {
         var lvTypeface = cache[YEKAN_EXTRA_BOLD]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANYekanMobileExtraBold.ttf")
@@ -219,7 +237,8 @@ object PersianFont {
         return lvTypeface
     }
 
-    fun YEKAN_MEDIUM(context: Context): Typeface {
+    @JvmStatic
+    fun yekanMedium(context: Context): Typeface {
         var lvTypeface = cache[YEKAN_MEDIUM]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANYekanMobileMedium.ttf")
@@ -229,7 +248,8 @@ object PersianFont {
         return lvTypeface
     }
 
-    fun YEKAN_THIN(context: Context): Typeface {
+    @JvmStatic
+    fun yekanThin(context: Context): Typeface {
         var lvTypeface = cache[YEKAN_THIN]
         if (lvTypeface == null) {
             lvTypeface = Typeface.createFromAsset(context.assets, "fonts/" + "IRANYekanMobileThin.ttf")
@@ -240,36 +260,37 @@ object PersianFont {
     }
     //</editor-fold>
 
+    @JvmStatic
     operator fun get(context: Context, type: FontEnum): Typeface {
         when (type) {
-            IRAN_SANS_ULTRA_LIGHT -> return IRAN_SANS_ULTRA_LIGHT(context)
+            IRAN_SANS_ULTRA_LIGHT -> return iranSansUltraLight(context)
 
-            IRANSANS_LIGHT -> return IRANSANS_LIGHT(context)
+            IRANSANS_LIGHT -> return iransansLight(context)
 
-            IRANSANS_MEDIUM -> return IRANSANS_MEDIUM(context)
+            IRANSANS_MEDIUM -> return iransansMedium(context)
 
-            IRANSANS_BOLD -> return IRANSANS_BOLD(context)
+            IRANSANS_BOLD -> return iransansBold(context)
 
-            IRANSANS_BLACK -> return IRANSANS_BLACK(context)
+            IRANSANS_BLACK -> return iransansBlack(context)
 
-            YEKAN_REGULAR -> return YEKAN_REGULAR(context)
+            YEKAN_REGULAR -> return yekanRegular(context)
 
-            YEKAN_LIGHT -> return YEKAN_LIGHT(context)
+            YEKAN_LIGHT -> return yekanLight(context)
 
-            YEKAN_BOLD -> return YEKAN_BOLD(context)
+            YEKAN_BOLD -> return yekanBold(context)
 
-            YEKAN_BLACK -> return YEKAN_BLACK(context)
+            YEKAN_BLACK -> return yekanBlack(context)
 
-            YEKAN_EXTRA_BLACK -> return YEKAN_EXTRA_BLACK(context)
+            YEKAN_EXTRA_BLACK -> return yekanExtraBlack(context)
 
-            YEKAN_EXTRA_BOLD -> return YEKAN_EXTRA_BOLD(context)
+            YEKAN_EXTRA_BOLD -> return yekanExtraBold(context)
 
-            YEKAN_MEDIUM -> return YEKAN_MEDIUM(context)
+            YEKAN_MEDIUM -> return yekanMedium(context)
 
-            YEKAN_THIN -> return YEKAN_THIN(context)
+            YEKAN_THIN -> return yekanThin(context)
 
-            IRANSANS_NORMAL -> return IRANSANS_NORMAL(context)
-            else -> return IRANSANS_NORMAL(context)
+            IRANSANS_NORMAL -> return iransansNormal(context)
+            else -> return iransansNormal(context)
         }
     }
 
